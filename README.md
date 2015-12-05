@@ -26,7 +26,7 @@ The following **additional** features are implemented:
   - Set custom percentages from the settings application
   - Set the default percentange that is displayed
   - Set the range for the amount of people to divide the bill into is displayed
-  - Set the default amount to divide the bill into
+  - Set the default amount to divide the bill into (Not functioning because of a small error)
   
 ## Video Walkthrough 
 
