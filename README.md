@@ -1,33 +1,29 @@
-# Pre-work - Tipster
+# Pre-work - *Tipster*
 
-Tipster is a tip calculator application for iOS.
+**Tipster** is a tip calculator application for iOS.
 
-Submitted by: Deep Patel
+Submitted by: **Deep Patel (DGh0st)**
 
-Time spent: 8 hours spent in total
+Time spent: **16** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is complete:
 
-* [X] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
-* [X] Settings page to change the default tip percentage.
+* [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+* [x] Settings page to change the default tip percentage.
 
 The following **optional** features are implemented:
-* [ ] UI animations
-* [ ] Remembering the bill amount across app restarts (if <10mins)
-* [ ] Using locale-specific currency and currency thousands separators.
-* [X] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [x] UI animations
+* [x] Remembering the bill amount across app restarts (if <10mins)
+* [x] Using locale-specific currency and currency thousands separators. (only the locale-specific currency)
+* [x] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
-- I have added an option to select the amount of people to divide the total into.
-- Customization for multiple things
-  - Set custom percentages from the settings application
-  - Set the default percentange that is displayed
-  - Set the range for the amount of people to divide the bill into is displayed
-  - Set the default amount to divide the bill into (Not functioning because of a small error)
-  
+- [x] List anything else that you can get done to improve the app functionality!
+- [x] Settings page to change the default people count and change the values for the tips (5%-30%) and people count (1-15).
+
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
@@ -38,7 +34,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Well to get things out of the way, the upcoming finals limited the amount of time I could spend on this application. I did not get the chance to dive into the UI Animations and locale-specific currency which I really wanted to do. With that out of the way, there were not much challenges that I faced while building this application.
+Describe any challenges encountered while building the app.
 
 ## License
 
