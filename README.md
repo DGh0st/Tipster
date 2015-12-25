@@ -36,6 +36,8 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 
+I did not have many challenges as I had already been exposed to iOS slightly with the modifications I had made for iOS Jailbreak Community. Swift was fun to learn and very different from Objective-C, which was a bit challenging at first to get used to.
+
 ## License
 
     Copyright [2015] [Deep Patel (DGh0st)]
