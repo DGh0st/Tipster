@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D5531C3B1C12786600F03854 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D5531C3A1C12786600F03854 /* Settings.bundle */; };
+		D503498C1C2383B4002BA9D3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D503498B1C2383B4002BA9D3 /* SettingsViewController.swift */; };
 		D5531C3D1C1295CB00F03854 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5531C3C1C1295CB00F03854 /* Launch Screen.xib */; };
 		D57FFE151C1234AC006D4A10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57FFE141C1234AC006D4A10 /* AppDelegate.swift */; };
 		D57FFE171C1234AC006D4A10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57FFE161C1234AC006D4A10 /* ViewController.swift */; };
@@ -27,7 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D5531C3A1C12786600F03854 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		D503498B1C2383B4002BA9D3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D5531C3C1C1295CB00F03854 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		D57FFE0F1C1234AC006D4A10 /* Tipster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D57FFE131C1234AC006D4A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 				D57FFE141C1234AC006D4A10 /* AppDelegate.swift */,
 				D57FFE161C1234AC006D4A10 /* ViewController.swift */,
 				D57FFE181C1234AC006D4A10 /* Main.storyboard */,
-				D5531C3A1C12786600F03854 /* Settings.bundle */,
+				D503498B1C2383B4002BA9D3 /* SettingsViewController.swift */,
 				D57FFE1B1C1234AC006D4A10 /* Images.xcassets */,
 				D57FFE121C1234AC006D4A10 /* Supporting Files */,
 				D5531C3C1C1295CB00F03854 /* Launch Screen.xib */,
@@ -159,7 +159,8 @@
 		D57FFE071C1234AC006D4A10 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = DGh0st;
 				TargetAttributes = {
 					D57FFE0E1C1234AC006D4A10 = {
@@ -195,7 +196,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5531C3B1C12786600F03854 /* Settings.bundle in Resources */,
 				D5531C3D1C1295CB00F03854 /* Launch Screen.xib in Resources */,
 				D57FFE1A1C1234AC006D4A10 /* Main.storyboard in Resources */,
 				D57FFE1C1C1234AC006D4A10 /* Images.xcassets in Resources */,
@@ -218,6 +218,7 @@
 			files = (
 				D57FFE171C1234AC006D4A10 /* ViewController.swift in Sources */,
 				D57FFE151C1234AC006D4A10 /* AppDelegate.swift in Sources */,
+				D503498C1C2383B4002BA9D3 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +272,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -285,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -321,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -336,6 +338,7 @@
 				INFOPLIST_FILE = Tipster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dgh0st.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -349,6 +352,7 @@
 				INFOPLIST_FILE = Tipster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dgh0st.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -368,6 +372,7 @@
 				);
 				INFOPLIST_FILE = TipsterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dgh0st.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tipster.app/Tipster";
 			};
@@ -383,6 +388,7 @@
 				);
 				INFOPLIST_FILE = TipsterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dgh0st.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tipster.app/Tipster";
 			};

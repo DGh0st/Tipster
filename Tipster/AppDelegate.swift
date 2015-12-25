@@ -12,10 +12,15 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    let defaults = NSUserDefaults.standardUserDefaults()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        // Override point for customization after application launch
+        if(defaults.doubleForKey("com.dgh0st.appclosetime") != Double() && CACurrentMediaTime() - defaults.doubleForKey("com.dgh0st.appclosetime") > 600){
+            defaults.setDouble(0.0, forKey: "com.dgh0st.billtext")
+            defaults.synchronize()
+        }
         return true
     }
 
@@ -38,6 +43,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(application: UIApplication) {
+        defaults.setDouble(CACurrentMediaTime(), forKey: "com.dgh0st.appclosetime")
+        defaults.synchronize()
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
