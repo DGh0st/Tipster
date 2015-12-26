@@ -28,6 +28,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+The bug with settings not applying over application restart has been fixed, but the video walkthrough has not been updated to display this fix.
+
 <img src='Tipster.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
