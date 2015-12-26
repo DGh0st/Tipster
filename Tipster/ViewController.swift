@@ -35,19 +35,18 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        if(defaults.boolForKey("com.dgh0st.settingschanged")) {
-    
+        if(defaults.boolForKey("com.dgh0st.settingschanged") || defaults.boolForKey("com.dgh0st.appclosed")) {
+            defaults.setBool(false, forKey: "com.dgh0st.appclosed")
             defaults.setBool(false, forKey: "com.dgh0st.settingschanged")
             defaults.synchronize()
             tipControl.selectedSegmentIndex = defaults.integerForKey("com.dgh0st.defaultpercent")
-        
             peopleControl.selectedSegmentIndex = defaults.integerForKey("com.dgh0st.defaultpeople")
-        if((defaults.stringForKey("com.dgh0st.percentdisplayed0")) != nil){
+            if((defaults.stringForKey("com.dgh0st.percentdisplayed0")) != nil){
                 for(var i = 0; i < 3; i++){
-                tipControl.setTitle(defaults.stringForKey("com.dgh0st.percentdisplayed" + String(i)), forSegmentAtIndex:i)
+                    tipControl.setTitle(defaults.stringForKey("com.dgh0st.percentdisplayed" + String(i)), forSegmentAtIndex:i)
                 }
             }
-        if((defaults.stringForKey("com.dgh0st.peopledisplayed0")) != nil){
+            if((defaults.stringForKey("com.dgh0st.peopledisplayed0")) != nil){
                 for(var i = 0; i < 5; i++){
                     peopleControl.setTitle(defaults.stringForKey("com.dgh0st.peopledisplayed" + String(i)), forSegmentAtIndex:i)
                 }
