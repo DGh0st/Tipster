@@ -34,30 +34,30 @@ class SettingsViewController: UIViewController {
         let defaultPercent = defaults.integerForKey("com.dgh0st.defaultpercent")
         let defaultpeople = defaults.integerForKey("com.dgh0st.defaultpeople")
         defaultPercentControl.selectedSegmentIndex = defaultPercent
-    if((defaults.stringForKey("com.dgh0st.percentdisplayed0")) != nil){
+        if((defaults.stringForKey("com.dgh0st.percentdisplayed0")) != nil){
             leftPercentStepper.value = defaults.doubleForKey("com.dgh0st.percentdisplayed0")
         }
-    if((defaults.stringForKey("com.dgh0st.percentdisplayed1")) != nil){
+        if((defaults.stringForKey("com.dgh0st.percentdisplayed1")) != nil){
             middlePercentStepper.value = defaults.doubleForKey("com.dgh0st.percentdisplayed1")
         }
-    if((defaults.stringForKey("com.dgh0st.percentdisplayed2")) != nil){
+        if((defaults.stringForKey("com.dgh0st.percentdisplayed2")) != nil){
             rightPercentStepper.value = defaults.doubleForKey("com.dgh0st.percentdisplayed2")
         }
         
         defaultPeopleControl.selectedSegmentIndex = defaultpeople
-    if((defaults.stringForKey("com.dgh0st.peopledisplayed0")) != nil){
+        if((defaults.stringForKey("com.dgh0st.peopledisplayed0")) != nil){
             leftPeopleStepper.value = NSString(string: defaults.stringForKey("com.dgh0st.peopledisplayed0")!).doubleValue
         }
-    if((defaults.stringForKey("com.dgh0st.peopledisplayed1")) != nil){
+        if((defaults.stringForKey("com.dgh0st.peopledisplayed1")) != nil){
             middleLeftPeopleStepper.value = defaults.doubleForKey("com.dgh0st.peopledisplayed1")
         }
-    if((defaults.stringForKey("com.dgh0st.peopledisplayed2")) != nil){
+        if((defaults.stringForKey("com.dgh0st.peopledisplayed2")) != nil){
             middlePeopleStepper.value = defaults.doubleForKey("com.dgh0st.peopledisplayed2")
         }
-    if((defaults.stringForKey("com.dgh0st.peopledisplayed3")) != nil){
+        if((defaults.stringForKey("com.dgh0st.peopledisplayed3")) != nil){
             middleRightPeopleStepper.value = defaults.doubleForKey("com.dgh0st.peopledisplayed3")
         }
-    if((defaults.stringForKey("com.dgh0st.peopledisplayed4")) != nil){
+        if((defaults.stringForKey("com.dgh0st.peopledisplayed4")) != nil){
             rightPeopleStepper.value = defaults.doubleForKey("com.dgh0st.peopledisplayed4")
         }
         updateStepperText()
